@@ -5,6 +5,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" type="text/css" href="XT2challenge2.css" />
 		<title>Klok</title>
+		
+		<script>
+			var myDate = new Date(),
+				month = myDate.getMonth(), //zero base, dus januari = 0
+				date = myDate.getDate(),
+				day = myDate.getDay(); //zero base, zondag = 0 
+
+			var months = ["januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december"];
+
+			console.log(months[month]);
+		</script>
 	</head>
 
 	<body>
