@@ -6,19 +6,49 @@
 		<link rel="stylesheet" type="text/css" href="XT2challenge2.css" />
 		<title>Klok</title>
 		
-		<script>
-			var myDate = new Date(),
+		<script type="text/javascript">
+			/*var myDate = new Date(),
 				month = myDate.getMonth(), //zero base, dus januari = 0
 				date = myDate.getDate(),
 				day = myDate.getDay(); //zero base, zondag = 0 
 
 			var months = ["januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december"];
 
-			console.log(months[month]);
+			console.log(months[month]);*/
+
+			function toonTijd(){
+				var datum = new Date();
+				var uren = datum.getHours(); //0 tot 23
+				var minuten = datum.getMinutes(); //0 tot 59
+				var seconden = datum.getSeconds(); //0 tot 59
+
+				//om op te lossen dat wanneer het bv kwart over 8 's ochtends is er een 0 voor de 8 komt, dus 08:15 ipv 8:15.
+				if(uren < 10){
+					uren = "0" + uren;
+				}
+
+				if(minuten < 10){
+					minuten = "0" + minuten;
+				}
+
+				if(seconden < 10){
+					seconden = "0" + seconden;
+				}
+
+				var tijd = uren + ":" + minuten + ":" + seconden;
+
+				document.getElementById("mijnDigitaleKlok").innerHTML = tijd;
+			}
+
+			setInterval(toonTijd, 1000);
+
+			window.onload = function(){
+				toonTijd();
+			}
 		</script>
 	</head>
 
 	<body>
-		<h1>testtttttttt</h1>
+		<div id="mijnDigitaleKlok"></div>
 	</body>
 </html> 
