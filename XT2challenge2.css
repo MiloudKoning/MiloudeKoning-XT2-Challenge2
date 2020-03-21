@@ -1,1 +1,22 @@
 @import url("https://use.typekit.net/ylg0ybk.css");
+
+#mijnDigitaleKlok {
+	display: flex;
+	font-family: 'brandon-grotesque', 'sans-serif';
+	color: #141414;
+	font-size: 70px;
+	justify-content: center;
+	align-items: center; /*waarorm werkt dit niet?????*/
+}
+
+.ochtend {
+	background-color: orange;
+}
+
+.middag {
+	background-color: pink;
+}
+
+.avond {
+	background-color: #800080;
+}
