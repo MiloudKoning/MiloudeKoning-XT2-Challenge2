@@ -4,13 +4,15 @@
 	display: flex;
 	font-family: 'brandon-grotesque', 'sans-serif';
 	color: #141414;
-	font-size: 70px;
+	font-size: 6em;
 	justify-content: center;
-	align-items: center; /*waarorm werkt dit niet?????*/
+	/*align-items: center;*/ /*waarom werkt dit niet?????*/
+	margin: 0;
+
 }
 
 .ochtend {
-	background-color: orange;
+	background-color: white;
 }
 
 .middag {
@@ -19,4 +21,26 @@
 
 .avond {
 	background-color: #800080;
+}
+
+.emoji {
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	margin-top: 50%; /*dan maar zo*/
+}
+
+.bericht {
+	display: flex;
+	justify-content: center;
+	font-family: 'brandon-grotesque', 'sans-serif';
+	font-weight: normal;
+	font-style: italic;
+	font-size: 30px;
+	margin: 0;
+	align-self: center; /*waarom werkt dit niet????*/
+}
+
+.geenBericht {
+	display: none;
 }

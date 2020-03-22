@@ -28,37 +28,70 @@
 					seconden = "0" + seconden;
 				}
 
-				var tijd = uren + ":" + minuten + ":" + seconden;
+				var tijd = uren + ":" + minuten /*+ ":" + seconden*/;
 
 				document.getElementById("mijnDigitaleKlok").innerHTML = tijd;
+
+				setInterval(toonTijd, 1000);
 			}
-
-			setInterval(toonTijd, 1000);
-
-		
 
 			function dagdelen(){
 				var datum = new Date();
 				var uren = datum.getHours();
-				var achtergrond = document.getElementById('container')
+				var container = document.getElementById('container');
+				var berichtOchtend = document.getElementById('berichtOchtend');
+				var berichtMiddag = document.getElementById('berichtMiddag');
+				var berichtAvond = document.getElementById('berichtAvond');
+				var emojiOchtend = document.getElementById('emojiOchtend');
+				var emojiMiddag = document.getElementById('emojiMiddag');
+				var emojiAvond = document.getElementById('emojiAvond');
+
 
 				if (uren >= 0 && uren < 12){
-					console.log("ochtend")
-					/*achtergrond.classList.add("ochtend");*/
-					achtergrond.className = 'ochtend';
+					/*console.log('ochtend')*/
+					/*container.classList.add("ochtend");*/
+					container.className = 'ochtend';
+
+					berichtOchtend.className = 'bericht';
+					berichtMiddag.className = 'geenBericht';
+					berichtAvond.className = 'geenBericht';
+
+					emojiOchtend.className = 'emoji';
+					emojiMiddag.className = 'geenBericht';
+					emojiAvond.className = 'geenBericht';
 				}
 
 				else if (uren >=12 && uren < 18) {
-					console.log("middag")
-					/*achtergrond.classList.add("middag");*/
-					achtergrond.className = 'middag';
+					/*console.log("middag")*/
+					/*container.classList.add("middag");*/
+					container.className = 'middag';
+
+					berichtOchtend.className = 'geenBericht';
+					berichtMiddag.className = 'bericht';
+					berichtAvond.className = 'geenBericht';
+
+					emojiOchtend.className = 'geenBericht';
+					emojiMiddag.className = 'emoji';
+					emojiAvond.className = 'geenBericht';
+
 				}
 
 				else {
-					console.log("avond")
-					/*achtergrond.classList.add("avond");*/
-					achtergrond.className = 'avond';
+					/*console.log("avond")*/
+					/*container.classList.add("avond");*/
+					container.className = 'avond';
+
+					berichtOchtend.className = 'geenBericht';
+					berichtMiddag.className = 'geenBericht';
+					berichtAvond.className = 'bericht';
+
+					emojiOchtend.className = 'geenBericht';
+					emojiMiddag.className = 'geenBericht';
+					emojiAvond.className = 'emoji';
+
 				}
+
+				setInterval(dagdelen, 1000);
 			}
 
 			window.onload = function(){
