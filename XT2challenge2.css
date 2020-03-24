@@ -11,16 +11,17 @@
 
 }
 
-.ochtend {
+.ochtend, .middag {
 	background-color: white;
+
+	transition: 2s;
 }
 
-.middag {
-	background-color: pink;
-}
 
-.avond {
-	background-color: #800080;
+.avond, .nacht {
+	background-color: #000000;
+
+	transition: 2s;
 }
 
 .emoji {
@@ -37,6 +38,7 @@
 	font-weight: normal;
 	font-style: italic;
 	font-size: 30px;
+	color: #141414;
 	margin: 0;
 	align-self: center; /*waarom werkt dit niet????*/
 }

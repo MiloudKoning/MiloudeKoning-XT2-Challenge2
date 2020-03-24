@@ -47,7 +47,7 @@
 				var emojiAvond = document.getElementById('emojiAvond');
 
 
-				if (uren >= 0 && uren < 12){
+				if (uren >= 6 && uren < 12){
 					/*console.log('ochtend')*/
 					/*container.classList.add("ochtend");*/
 					container.className = 'ochtend';
@@ -55,10 +55,12 @@
 					berichtOchtend.className = 'bericht';
 					berichtMiddag.className = 'geenBericht';
 					berichtAvond.className = 'geenBericht';
+					berichtNacht.className = 'geenBericht';
 
 					emojiOchtend.className = 'emoji';
 					emojiMiddag.className = 'geenBericht';
 					emojiAvond.className = 'geenBericht';
+					emojiNacht.className = 'geenBericht';
 				}
 
 				else if (uren >=12 && uren < 18) {
@@ -69,14 +71,16 @@
 					berichtOchtend.className = 'geenBericht';
 					berichtMiddag.className = 'bericht';
 					berichtAvond.className = 'geenBericht';
+					berichtNacht.className = 'geenBericht';
 
 					emojiOchtend.className = 'geenBericht';
 					emojiMiddag.className = 'emoji';
 					emojiAvond.className = 'geenBericht';
+					emojiNacht.className = 'geenBericht';
 
 				}
 
-				else {
+				else if (uren >=18 && uren < 24){
 					/*console.log("avond")*/
 					/*container.classList.add("avond");*/
 					container.className = 'avond';
@@ -84,10 +88,27 @@
 					berichtOchtend.className = 'geenBericht';
 					berichtMiddag.className = 'geenBericht';
 					berichtAvond.className = 'bericht';
+					berichtNacht.className = 'geenBericht';
 
 					emojiOchtend.className = 'geenBericht';
 					emojiMiddag.className = 'geenBericht';
 					emojiAvond.className = 'emoji';
+					emojiNacht.className = 'geenBericht';
+
+				}
+
+				else {
+					container.className = 'nacht';
+
+					berichtOchtend.className = 'geenBericht';
+					berichtMiddag.className = 'geenBericht';
+					berichtAvond.className = 'geenBericht';
+					berichtNacht.className = 'bericht';
+
+					emojiOchtend.className = 'geenBericht';
+					emojiMiddag.className = 'geenBericht';
+					emojiAvond.className = 'geenBericht';
+					emojiNacht.className = 'emoji';
 
 				}
 
