@@ -87,7 +87,7 @@
 
 					berichtOchtend.className = 'geenBericht';
 					berichtMiddag.className = 'geenBericht';
-					berichtAvond.className = 'bericht';
+					berichtAvond.className = 'berichtDonker';
 					berichtNacht.className = 'geenBericht';
 
 					emojiOchtend.className = 'geenBericht';
@@ -103,7 +103,7 @@
 					berichtOchtend.className = 'geenBericht';
 					berichtMiddag.className = 'geenBericht';
 					berichtAvond.className = 'geenBericht';
-					berichtNacht.className = 'bericht';
+					berichtNacht.className = 'berichtDonker';
 
 					emojiOchtend.className = 'geenBericht';
 					emojiMiddag.className = 'geenBericht';

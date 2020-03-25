@@ -11,15 +11,22 @@
 
 }
 
+.avond > #mijnDigitaleKlok {
+	color: #DEDEDE;
+}
+
+.nacht > #mijnDigitaleKlok {
+	color: #DEDEDE;
+}
+
 .ochtend, .middag {
-	background-color: white;
+	background-color: #FAFAFA;
 
 	transition: 2s;
 }
 
-
 .avond, .nacht {
-	background-color: #000000;
+	background-color: #141414;
 
 	transition: 2s;
 }
@@ -31,16 +38,23 @@
 	margin-top: 50%; /*dan maar zo*/
 }
 
-.bericht {
+.bericht, .berichtDonker {
 	display: flex;
 	justify-content: center;
 	font-family: 'brandon-grotesque', 'sans-serif';
 	font-weight: normal;
 	font-style: italic;
 	font-size: 30px;
-	color: #141414;
 	margin: 0;
 	align-self: center; /*waarom werkt dit niet????*/
+}
+
+.bericht {
+	color: #141414;
+}
+
+.berichtDonker {
+	color: #DEDEDE
 }
 
 .geenBericht {
