@@ -8,7 +8,7 @@ body {
 	top: 50%;
 	left: 50%;
 
-	transform: translate(-50%, -50%); /*nu komt die klok van rechtsonder bij refreshen maar is eigenlijk wel cool*/
+	transform: translate(-50%, -50%);
 }
 
 h2 {
@@ -33,34 +33,11 @@ h2 {
 	  }
 }
 
-/*
-@keyframes uitvliegen {
-	from {
-	    opacity: 1;
-	  }
-
-	to {
-	    opacity: 0;
-	    transform: translate(100%, 0);
-	  }
-}
-*/
-
 #mijnDigitaleKlok {
 	font-family: 'brandon-grotesque', 'sans-serif';
 	color: #141414;
 	font-size: 6em;
 	margin: 0;
-	/*display: flex;
-	justify-content: center;*/
-}
-
-.avond > #mijnDigitaleKlok {
-	color: #DEDEDE;
-}
-
-.nacht > #mijnDigitaleKlok {
-	color: #DEDEDE;
 }
 
 .ochtend, .middag {
@@ -73,6 +50,14 @@ h2 {
 	background-color: #141414;
 
 	transition: 2s;
+}
+
+.avond > #mijnDigitaleKlok {
+	color: #DEDEDE;
+}
+
+.nacht > #mijnDigitaleKlok {
+	color: #DEDEDE;
 }
 
 .emoji {
@@ -99,8 +84,8 @@ h2 {
 	display: none;
 }
 
-/*M E D I A   Q U E R I E S*/
-/*TABLET*/
+/*media quaries*/
+/*tablet*/
 @media only screen and (min-width: 480px) and (max-width: 991px){
 	.bericht, .berichtDonker {
 		font-size: 2.3em;
@@ -111,7 +96,7 @@ h2 {
 	}
 }
 
-/*DESKTOP*/
+/*desktop*/
 @media only screen and (min-width: 992px){
 	.bericht, .berichtDonker {
 		font-size: 2.8em;

@@ -35,8 +35,6 @@ function dagdelen(){
 
 
 	if (uren >= 6 && uren < 12){
-		/*console.log('ochtend')*/
-		/*container.classList.add("ochtend");*/
 		container.className = 'ochtend';
 
 		berichtOchtend.className = 'bericht';
@@ -51,8 +49,6 @@ function dagdelen(){
 	}
 
 	else if (uren >=12 && uren < 18) {
-		/*console.log("middag")*/
-		/*container.classList.add("middag");*/
 		container.className = 'middag';
 
 		berichtOchtend.className = 'geenBericht';
@@ -68,8 +64,6 @@ function dagdelen(){
 	}
 
 	else if (uren >=18 && uren < 24){
-		/*console.log("avond")*/
-		/*container.classList.add("avond");*/
 		container.className = 'avond';
 
 		berichtOchtend.className = 'geenBericht';
