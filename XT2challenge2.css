@@ -1,5 +1,36 @@
 @import url("https://use.typekit.net/ylg0ybk.css");
 
+.bericht, .berichtDonker, .emoji {
+	animation-name: invliegen;
+	animation-duration: 4s;
+}
+
+@keyframes invliegen {
+	from {
+	    opacity: 0;
+	    transform: translate(-100%, 0);
+	  }
+
+	to {
+	    opacity: 1;
+	    transform: translate(0, 0);
+	  }
+}
+
+/*
+@keyframes uitvliegen {
+	from {
+	    opacity: 1;
+	  }
+
+	to {
+	    opacity: 0;
+	    transform: translate(100%, 0);
+	  }
+}
+*/
+
+
 #mijnDigitaleKlok {
 	display: flex;
 	font-family: 'brandon-grotesque', 'sans-serif';
@@ -8,7 +39,6 @@
 	justify-content: center;
 	/*align-items: center;*/ /*waarom werkt dit niet?????*/
 	margin: 0;
-
 }
 
 .avond > #mijnDigitaleKlok {
@@ -54,9 +84,26 @@
 }
 
 .berichtDonker {
-	color: #DEDEDE
+	color: #DEDEDE;
 }
 
 .geenBericht {
 	display: none;
+}
+
+/*M E D I A   Q U E R I E S*/
+/*TABLET*/
+@media only screen and (min-width: 480px) and (max-width: 991px){
+	#mijnDigitaleKlok {
+		font-size: 10em;
+	}
+
+	.emoji {
+		margin-top: 40%;
+	}
+}
+
+/*DESKTOP*/
+@media only screen and (min-width: 992px){
+
 }
