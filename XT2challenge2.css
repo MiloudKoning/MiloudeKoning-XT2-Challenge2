@@ -1,15 +1,20 @@
 @import url("https://use.typekit.net/ylg0ybk.css");
 
+body {
+	display: flex;
+	flex-direction: column;
+
+	position: fixed;
+	top: 50%;
+	left: 50%;
+
+	transform: translate(-50%, -50%);
+	transition-property: none;
+}
+
 h2 {
 	display: flex;
 	justify-content: center;
-	align-items: center;
-}
-
-h1 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 .bericht, .berichtDonker, .emoji {
@@ -48,6 +53,8 @@ h1 {
 	color: #141414;
 	font-size: 6em;
 	margin: 0;
+	/*display: flex;
+	justify-content: center;*/
 }
 
 .avond > #mijnDigitaleKlok {
