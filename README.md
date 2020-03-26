@@ -4,8 +4,8 @@ Visueel ontwerp
 De stijl van mijn klok is minimalistisch. 
 Ik heb hiervoor gekozen omdat ik dat zelf een moderne uitstraling vind hebben en 
 daardoor ook vind passen bij de toekomst en de ruimtevaart. Aangezien de klok onderdeel 
-wordt van een device van een persoon en getoond wordt op andere schermen is dit een stijl die, 
-door het minimalistische, bij iedereen past.
+wordt van een device van een veel verschillende personen en getoond wordt op andere schermen
+is dit een stijl die, door het minimalistische, bij iedereen past.
  
 ### Dagdelen
 Mijn klok verandert elk dagdeel, dus in de ochtend, middag, avond en nacht. Elke keer verschijnt
