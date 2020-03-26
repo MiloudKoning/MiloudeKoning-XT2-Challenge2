@@ -1,6 +1,6 @@
 @import url("https://use.typekit.net/ylg0ybk.css");
 
-.section {
+#container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
