@@ -1,6 +1,5 @@
 # MiloudeKoning-XT2-Challenge2
-Visueel ontwerp
--------------
+### Visueel ontwerp
 De stijl van mijn klok is minimalistisch. 
 Ik heb hiervoor gekozen omdat ik dat zelf een moderne uitstraling vind hebben en 
 daardoor ook vind passen bij de toekomst en de ruimtevaart. En aangezien de klok onderdeel 
