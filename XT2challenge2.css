@@ -1,5 +1,10 @@
 @import url("https://use.typekit.net/ylg0ybk.css");
 
+.container {
+	display: flex;
+	vertical-align: bottom;
+}
+
 .bericht, .berichtDonker, .emoji {
 	animation-name: invliegen;
 	animation-duration: 4s;
@@ -74,7 +79,7 @@
 	font-family: 'brandon-grotesque', 'sans-serif';
 	font-weight: normal;
 	font-style: italic;
-	font-size: 30px;
+	font-size: 1.8em;
 	margin: 0;
 	align-self: center; /*waarom werkt dit niet????*/
 }
@@ -105,5 +110,15 @@
 
 /*DESKTOP*/
 @media only screen and (min-width: 992px){
+	#mijnDigitaleKlok {
+		font-size: 15em;
+	}
 
+	.emoji {
+		margin-top: 10%;
+	}
+
+	.bericht, .berichtDonker {
+		font-size: 2.8em;
+	}
 }
