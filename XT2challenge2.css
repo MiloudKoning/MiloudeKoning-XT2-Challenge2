@@ -8,8 +8,7 @@ body {
 	top: 50%;
 	left: 50%;
 
-	transform: translate(-50%, -50%);
-	transition-property: none;
+	transform: translate(-50%, -50%); /*nu komt die klok van rechtsonder bij refreshen maar is eigenlijk wel cool*/
 }
 
 h2 {
@@ -46,7 +45,6 @@ h2 {
 	  }
 }
 */
-
 
 #mijnDigitaleKlok {
 	font-family: 'brandon-grotesque', 'sans-serif';
@@ -104,6 +102,10 @@ h2 {
 /*M E D I A   Q U E R I E S*/
 /*TABLET*/
 @media only screen and (min-width: 480px) and (max-width: 991px){
+	.bericht, .berichtDonker {
+		font-size: 2.3em;
+	}
+
 	#mijnDigitaleKlok {
 		font-size: 10em;
 	}
@@ -111,11 +113,11 @@ h2 {
 
 /*DESKTOP*/
 @media only screen and (min-width: 992px){
-	#mijnDigitaleKlok {
-		font-size: 15em;
-	}
-
 	.bericht, .berichtDonker {
 		font-size: 2.8em;
+	}
+
+	#mijnDigitaleKlok {
+		font-size: 15em;
 	}
 }
